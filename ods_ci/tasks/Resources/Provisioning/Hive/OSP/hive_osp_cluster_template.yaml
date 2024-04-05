@@ -38,13 +38,13 @@ items:
         platform:
           openstack:
             type: ${infrastructure_configurations}[osp_flavor]
-        replicas: 3
+        replicas: 0
       controlPlane:
         name: master
         platform:
           openstack:
             type: ${infrastructure_configurations}[osp_flavor]
-        replicas: 3
+        replicas: 1
       metadata:
         name: ${infrastructure_configurations}[hive_cluster_name]-install
       networking:
